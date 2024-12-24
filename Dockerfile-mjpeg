@@ -4,7 +4,7 @@ RUN apt update \
  && apt install -y \
       ffmpeg x264 libx264-dev libuv1 \
       libwebp-dev libtiff5-dev libjpeg*-turbo libjpeg*-turbo-dev libopenjp2-7-dev  \
-      zlib1g-dev libfreetype6-dev liblcms2-dev \
+      zlib1g-dev libfreetype6-dev liblcms2-dev gcc cpp \
  && apt clean \
  && rm -rf /var/lib/apt/lists/*
 
